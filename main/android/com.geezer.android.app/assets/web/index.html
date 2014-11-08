@@ -1,31 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="phoneApp">
 
 <head>
-    <meta charset="utf-8">
-    <title>Gossiper</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-<!--    <link href="css/styles.css" rel="stylesheet"> -->
-    <link href="css/animation.css" rel="stylesheet" media="screen" />
+  <meta charset="utf-8">
+  <title>Gossiper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+  <!--    <link href="css/styles.css" rel="stylesheet"> -->
+  <link href="css/animation.css" rel="stylesheet" media="screen" />
 
-    <script data-main="js/app" src="js/require.js"></script>
+  <script src="js/angular/angular.js"></script>
+  <script src="js/angular/angular-mocks.js"></script>
+  <script src="js/angular/angular-route.min.js"></script>
+  <script src="js/jquery/jquery.min.js"></script>
+
+  <script src="js/lib/app.js"></script>
+  <script src="js/lib/ng-controller.js"></script>
 </head>
 
 <body>
-
-<div ng-app="">
-<div ng-init="checked=true">
-  <label>
-    <input type="checkbox" ng-model="checked" style="float:left; margin-right:10px;"> Is Visible...
-  </label>
-  <div class="check-element sample-show-hide" ng-show="checked" style="clear:both;">
-    Visible...
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
+AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
+9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red dot" />
+  <div id="myDiv">
   </div>
-</div>
-
-</div>
+  <script>
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    }
+  }
+  xmlhttp.open("GET","https://cr-rev.appspot.com/_ah/api/crrev/v1/redirect/3",true);
+  xmlhttp.send();
+  </script>
 
 </body>
+
 </html>
