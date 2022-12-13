@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-geezerMain",
+      "appliesTo": "poc/angular/angular+rest+UI/src/geezerMain.html",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-app",
+      "appliesTo": "poc/node/express+mongoDb/app.js",
+      "type": "launch"
+    }
+  ]
+}

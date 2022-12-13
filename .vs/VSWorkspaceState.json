@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\poc",
+    "\\poc\\android",
+    "\\poc\\android\\com.geezer.poc.android.webview",
+    "\\poc\\angular",
+    "\\poc\\angular\\angular+rest+UI",
+    "\\poc\\angular\\angular+rest+UI\\src",
+    "\\poc\\node",
+    "\\poc\\node\\em",
+    "\\poc\\node\\express+mongoDb"
+  ],
+  "SelectedNode": "\\poc\\android\\com.geezer.poc.android.webview\\ic_launcher-web.png",
+  "PreviewInSolutionExplorer": false
+}
